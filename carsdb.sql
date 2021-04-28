@@ -84,12 +84,12 @@ CREATE TABLE `product` (
   `transmission` varchar(3) DEFAULT NULL,
   `yom` date DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
-  `brandid` int NOT NULL,
+  `brand_brandid` int NOT NULL,
   PRIMARY KEY (`productid`),
   UNIQUE KEY `Product_ID_UNIQUE` (`productid`),
   UNIQUE KEY `Name_UNIQUE` (`productname`),
-  KEY `fk_Product_Brand_idx` (`brandid`),
-  CONSTRAINT `fk_Product_Brand` FOREIGN KEY (`brandid`) REFERENCES `brand` (`brandid`)
+  KEY `fk_Product_Brand_idx` (`brand_brandid`),
+  CONSTRAINT `fk_Product_Brand` FOREIGN KEY (`brand_brandid`) REFERENCES `brand` (`brandid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
