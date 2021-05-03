@@ -80,7 +80,7 @@ CREATE TABLE `product` (
   `productname` varchar(45) NOT NULL,
   `power` int DEFAULT NULL,
   `torque` int DEFAULT NULL,
-  `weight` decimal(5,3) DEFAULT NULL,
+  `weight` decimal(10,3) DEFAULT NULL,
   `transmission` varchar(3) DEFAULT NULL,
   `yom` date DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
@@ -141,4 +141,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-01 14:43:32
+-- Dump completed on 2021-05-03 16:45:07
