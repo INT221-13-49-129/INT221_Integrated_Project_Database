@@ -1,0 +1,18 @@
+version: '3'
+services:
+  database:
+   build: .
+   image: database
+   environment: 
+    MYSQL_ROOT_USER: root
+    MYSQL_ROOT_PASSWORD: Newnismo_2001
+    MYSQL_DATABASE: carsdb
+   volumes:
+    - ./data-sys:/var/lib/mysql
+   ports:
+    - "3306:3306"
+
+networks:
+    default:
+        external:
+            name: allnetwork
