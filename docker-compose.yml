@@ -5,7 +5,7 @@ services:
    image: database
    environment: 
     MYSQL_ROOT_USER: root
-    MYSQL_ROOT_PASSWORD: root
+    MYSQL_ROOT_PASSWORD: Newnismo_2001
     MYSQL_DATABASE: carsdb
    volumes:
     - "./scripts/carsdb.sql:/docker-entrypoint-initdb.d/carsdb.sql"
