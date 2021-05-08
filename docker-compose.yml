@@ -1,6 +1,7 @@
 version: '3'
 services:
   database:
+    container_name: database
    build: .
    image: database
    environment: 
