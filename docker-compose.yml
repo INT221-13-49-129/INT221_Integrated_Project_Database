@@ -8,7 +8,8 @@ services:
     MYSQL_ROOT_PASSWORD: Newnismo_2001
     MYSQL_DATABASE: carsdb
    volumes:
-    - "./script/carsdb.sql:/docker-entrypoint-initdb.d/carsdb.sql"
+    - "./scripts/carsdb.sql:/docker-entrypoint-initdb.d/carsdb.sql"
+    - "./scripts/user_grant.sql:/docker-entrypoint-initdb.d/user_grant.sql"
    ports:
     - "3306:3306"
 
