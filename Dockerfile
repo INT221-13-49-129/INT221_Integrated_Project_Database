@@ -1,4 +1,4 @@
 FROM mysql
 COPY ./scripts ./scripts
-ENV  MYSQL_ROOT_PASSWORD=Newnismo_2001
+ENV  MYSQL_ROOT_PASSWORD=root
 EXPOSE 3306:3306
